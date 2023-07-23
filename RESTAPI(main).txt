@@ -1,0 +1,108 @@
+first understand what is api ?
+=> API stands for Application Programming Interface. In the context of APIs, the word
+
+Application => refers to any software with a distinct function. 
+Interface => can be thought of as a contract of service between two applications. 
+This contract defines how the two communicate with each other using requests and responses.
+
+simple word ,
+ set of rules that dictate how two machines talk to each other.
+
+dictate => means tell somebody what to do in a way that seems unfair
+
+Every time when you acess an like facebook or check weather on your smartphone, 
+there an api used
+
+REST API => 
+
+ A RESTful api an architetural style for applications Programming Interface(API) that use
+ HTTP requests to acess and use data. 
+
+we can create CRUD operation with use of REST API easily (create , read , update , delete)
+
+CRUD = Create Read Update Delete
+
+but here what means by Rest api an architetural style ? 
+
+=> here architetural style means by using this method => post , get , put-patch , delete
+so we have four methods in rest api : with the use of this method we can create CRUD operation 
+as architetural style
+
+1. POST - creates new records (create)
+
+2. GET - reading the data (read)
+
+3. put , patch - updating the data (update) 
+
+4. delete - for deleting the data
+
+
+Rest api is nothing but crud operation using this method (post , get , put , delete)
+
+FOR Example ,
+
+let' assume we are working in school student data , we need to use here restful api 
+for creating that data :
+
+http verbs:
+
+post method - so for creating new student all info we need to use(create)
+
+get method - so reading student data basically getting data and print (read)
+
+put method - student name is not written currect we need to use for that (update)
+
+delete method - student gone in other school so we need to delete data for that (delete)
+
+
+that what rest API is (post , get , put , delete) with help of this method we can do 
+crud operation easily architetural style.
+
+what is actual purpose of using restAPI ?
+
+=> In rest api we do not create route for specific method like let's we have student data ,
+so post method (create student) => https.school/students
+so get method (read student) => https.school/students
+so put method (update student) => https.school/students
+so delete method (delete student) => https.school/students
+
+=> here you can see we are using same url to perform all the mentioned post , get, put, delete 
+   method which makes it easy to understand as well as maintainable code base. 
+
+WE DO NOT NEED TO CREATE SPERATLY URL FOR THAT, THAT WHY REST API IS VERY USEFUL.
+
+diffrence between put and patch method ?
+=> with the help of put method we can update but return it will update all data
+=> patch will update specific data
+
+rest api is stateless 
+=> means whenver you create , delete , or add something that change will not goona store 
+in localstorge or something , once delete the data then it will always gonna delete 
+you can't access again. that the beauty of rest api
+
+MNG's architetural => folder structure make file separtlty to use , it is make more 
+understandable and maintainable code
+
+
+# why we need restapi ?
+
+=> if we don't use restAPI then when we create without that and request for one data 
+   in response we get full HTML page as response. but here i only want one data 
+   i don't want full html page that means we want data to be in  structure format
+   rather then complete webpage.
+
+=> so without creating restapi we need to use a lot of methods to get required 
+   information from the server. like http request , http response 
+   if we have so many data for that we need to use this method again and again
+   in order to get data   
+
+=> here, rest api come into picture 
+=> here we just need to create one object it will automatically fit to that object
+
+=> Example : let'say we have restaurant app. here we want one single restaurant data
+=> so restapi will go to database and get that data and fit to that object that we 
+=> have created 
+
+=> like /api/restuarantData
+
+here it will automatically go to this api and add json data
